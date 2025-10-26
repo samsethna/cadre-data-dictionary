@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CADRE Data Dictionary</title>
+
+  <!-- DataTables (table UI) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/datatables.net-dt@2/css/jquery.dataTables.min.css">
+  <!-- Minimal styling tweak -->
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 24px; }
+    header { margin-bottom: 16px; }
+    .controls { display: flex; gap: 12px; align-items: center; margin-bottom: 12px; flex-wrap: wrap; }
+    label { font-weight: 600; }
+    #table-container { overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CADRE Data Dictionary</h1>
+    <p>Search, filter, and browse variables. Use the table filter to view fields by OMOP table.</p>
+  </header>
+
+  <div class="controls">
+    <label for="tableFilter">Filter by OMOP table:</label>
+    <select id="tableFilter">
+      <option value="">All tables</option>
+    </select>
+  </div>
+
+  <div id="table-container">
+    <table id="dictTable" class="display" style="width:100%"></table>
+  </div>
+
+  <!-- jQuery (required by DataTables 2 for the DT theme) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <!-- DataTables core -->
+  <script src="https://cdn.jsdelivr.net/npm/datatables.net@2/js/dataTables.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/datatables.net-dt@2/js/dataTables.dataTables.min.js"></script>
+  <!-- PapaParse (CSV to JSON) -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+  <script>
+    // Adjust if your column names differ
+    const TABLE_COLUMN_NAME = "Table";        // e.g., 'Table' or 'omop_table'
+    // Optional: set preferred column order; any others will append after these
+    const PREFERRED_ORDER = ["Table","Field","Description","DataType","ConceptId","Notes"];
+
+    async function loadCSV(path) {
+      const text = await fetch(path).then(r => {
+        if (!r.ok) throw new Error("Failed to fetch CSV: " + r.status);
+        return r.text();
+      });
+      const parsed = Papa.parse(text, { header: true, skipEmptyLines: true });
+      return parsed.data;
+    }
+
+    function buildColumns(rows) {
+      const allKeys = new Set();
+      rows.forEach(r => Object.keys(r).forEach(k => allKeys.add(k)));
+      const keys = [
+        ...PREFERRED_ORDER.filter(k => allKeys.has(k)),
+        ...[...allKeys].filter(k => !PREFERRED_ORDER.includes(k))
+      ];
+      const cols = keys.map(k => ({ title: k, data: k }));
+      return cols;
+    }
+
+    function populateTableFilter(rows) {
+      const select = document.getElementById("tableFilter");
+      const values = Array.from(new Set(rows.map(r => r[TABLE_COLUMN_NAME]).filter(Boolean))).sort();
+      values.forEach(v => {
+        const opt = document.createElement("option");
+        opt.value = v;
+        opt.textContent = v;
+        select.appendChild(opt);
+      });
+    }
+
+    (async function init() {
+      try {
+        const data = await loadCSV("data_dictionary.csv");
+        if (!data.length) throw new Error("CSV appears empty or headers missing.");
+
+        const columns = buildColumns(data);
+        populateTableFilter(data);
+
+        const table = new DataTable("#dictTable", {
+          data,
+          columns,
+          pageLength: 25,
+          deferRender: true,
+          autoWidth: false,
+          order: [], // leave unsorted; user can click headers
+          columnDefs: [
+            // Trim whitespace and show nulls as empty cells
+            { targets: "_all", render: (d) => (d === null || d === undefined) ? "" : String(d).trim() }
+          ]
+        });
+
+        // Dropdown filter by OMOP table
+        document.getElementById("tableFilter").addEventListener("change", function () {
+          const value = this.value;
+          const colIndex = columns.findIndex(c => c.data === TABLE_COLUMN_NAME);
+          if (colIndex === -1) return;
+          if (!value) {
+            table.column(colIndex).search("").draw();
+          } else {
+            // Exact match; escape regex special chars
+            const escaped = value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+            table.column(colIndex).search("^" + escaped + "$", true, false).draw();
+          }
+        });
+
+      } catch (err) {
+        console.error(err);
+        alert("There was a problem loading the data dictionary. See console for details.");
+      }
+    })();
+  </script>
+</body>
+</html>
