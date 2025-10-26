@@ -1,0 +1,287 @@
+﻿Concept ID,Mapping,OMOP Table,Table,Variable,Response
+45879080,Primary,observation,ADDRESS_HIST_DIM.csv,ADDRESS_TYPE,Current
+37019469,Alternative,observation,ADDRESS_HIST_DIM.csv,ADDRESS_TYPE,Placement
+45879080,Primary,observation,ADDRESS_HIST_DIM.csv,ADDRESS_TYPE,Primary
+37019469,Alternative,observation,ADDRESS_HIST_DIM.csv,ADDRESS_TYPE,Short Break Placement
+46237191,General-Neglect or Abuse Suspected,observation,CATEGORY_OF_NEED_FACT.csv,﻿CATEGORY_OF_NEED ,N1 - Abuse or neglect
+4052648,Disability,observation,CATEGORY_OF_NEED_FACT.csv,﻿CATEGORY_OF_NEED ,N2 - Disability
+4142972,Family illness,observation,CATEGORY_OF_NEED_FACT.csv,﻿CATEGORY_OF_NEED ,N3 - Parental Illness
+36717118,Family distress,observation,CATEGORY_OF_NEED_FACT.csv,﻿CATEGORY_OF_NEED ,N4 - Family in Acute Stress
+4094126,Family problems,observation,CATEGORY_OF_NEED_FACT.csv,﻿CATEGORY_OF_NEED ,N5 - Family Disfunction
+4246609,Antisocial behavior,observation,CATEGORY_OF_NEED_FACT.csv,﻿CATEGORY_OF_NEED ,N6 - Soc unacc behaviour
+4310138,Low income,observation,CATEGORY_OF_NEED_FACT.csv,﻿CATEGORY_OF_NEED ,N7 - Low income
+4247382,Impaired parenting,observation,CATEGORY_OF_NEED_FACT.csv,﻿CATEGORY_OF_NEED ,N8 - Absent parenting
+45885208,Other Reason,observation,CATEGORY_OF_NEED_FACT.csv,﻿CATEGORY_OF_NEED ,N9 - Cases other than children in need
+36308455,Refugee,observation,CATEGORY_OF_NEED_FACT.csv,﻿CATEGORY_OF_NEED ,U8 - Unaccompanied Asylum Seeking Child (UASC)
+46237191,General-Neglect or Abuse Suspected,observation,CLA_FACT.csv,﻿CATEGORY_OF_NEED,N1 - Abuse or neglect
+4052648,Disability,observation,CLA_FACT.csv,﻿CATEGORY_OF_NEED,N2 - Disability
+4142972,Family illness,observation,CLA_FACT.csv,﻿CATEGORY_OF_NEED,N3 - Parental Illness
+36717118,Family distress,observation,CLA_FACT.csv,﻿CATEGORY_OF_NEED,N4 - Family in Acute Stress
+4094126,Family problems,observation,CLA_FACT.csv,﻿CATEGORY_OF_NEED,N5 - Family Disfunction
+4246609,Antisocial behavior,observation,CLA_FACT.csv,﻿CATEGORY_OF_NEED,N6 - Soc unacc behaviour
+4310138,Low income,observation,CLA_FACT.csv,﻿CATEGORY_OF_NEED,N7 - Low income
+4247382,Impaired parenting,observation,CLA_FACT.csv,﻿CATEGORY_OF_NEED,N8 - Absent parenting
+45885208,Other Reason,observation,CLA_FACT.csv,﻿CATEGORY_OF_NEED,N9 - Cases other than children in need
+36308455,Refugee,observation,CLA_FACT.csv,﻿CATEGORY_OF_NEED,U8 - Unaccompanied Asylum Seeking Child (UASC)
+4050948,Adopted,observation,CLA_FACT.csv,CLA_CEASED_REASON,E11 - Adopted - application unopposed
+4050948,Adopted,observation,CLA_FACT.csv,CLA_CEASED_REASON,"E12 - Adopted, consent dispensed with"
+4072594,Lives with parents,observation,CLA_FACT.csv,CLA_CEASED_REASON,"E13 - Left care to live with parents, relatives, or other person with no parental responsibility"
+45880009,Died,observation,CLA_FACT.csv,CLA_CEASED_REASON,E2 - Died
+4072594,Lives with parents,observation,CLA_FACT.csv,CLA_CEASED_REASON,E4 - Returned home to live with parents (no order)
+4052611,Returned home,observation,CLA_FACT.csv,CLA_CEASED_REASON,E41 - Returned home - Child Arrangement order
+4052186,Child in foster care,observation,CLA_FACT.csv,CLA_CEASED_REASON,E43 - Special guardianship order made to former foster carers
+4074459,Living with caregiver,observation,CLA_FACT.csv,CLA_CEASED_REASON,E44 - Special guardianship order made to carers other than former foster carers
+4072594,Lives with parents,observation,CLA_FACT.csv,CLA_CEASED_REASON,E4A - Planned return home to live with parents (no order)
+4072594,Lives with parents,observation,CLA_FACT.csv,CLA_CEASED_REASON,E4B - Unplanned return home to live with parents (no order)
+45885208,Other Reason,observation,CLA_FACT.csv,CLA_CEASED_REASON,E8 - CLA ceased for any other reason
+4123199,New episode,observation,CLA_FACT.csv,CLA_CEASED_REASON,X1 - New Episode
+44791610,Subject to interim care order under Children Act 1989,observation,CLA_FACT.csv,LEGAL_STATUS,CLA - C1 - Interim Care Order
+44791609,Subject to care order under Children Act 1989,observation,CLA_FACT.csv,LEGAL_STATUS,CLA - C2 - Full Care Order
+4022052,Child given for adoption,observation,CLA_FACT.csv,LEGAL_STATUS,CLA - E1 - Placement order granted
+4332295,Child in police protection,observation,CLA_FACT.csv,LEGAL_STATUS,"CLA - L1 - Under police protection, in local authority accommodation"
+44810618,Provision of accommodation under section 20 of Children Act 1989,observation,CLA_FACT.csv,LEGAL_STATUS,CLA - V2 - Single period of accommodation under Section 20
+44810618,Provision of accommodation under section 20 of Children Act 1989 with [qualifier] Respite care service,observation,CLA_FACT.csv,LEGAL_STATUS,CLA - V4 - Accommodated with breaks (no care episodes recorded)
+46273928,Liaising with family,observation,CONTACT_FACT.csv,CONTACT_SOURCE,1A - Individual - Family member/relative/carer
+46271604,Liaising with education service,observation,CONTACT_FACT.csv,CONTACT_SOURCE,2A - Schools
+46271604,Liaising with education service,observation,CONTACT_FACT.csv,CONTACT_SOURCE,2B - Education Services
+46271601,Liaising with physician,observation,CONTACT_FACT.csv,CONTACT_SOURCE,3A - Health services - GP
+607649,Liaising with healthcare provider,observation,CONTACT_FACT.csv,CONTACT_SOURCE,3D - Health services - Other primary health services
+4073054,Liaising with [modifier] Emergency services,observation,CONTACT_FACT.csv,CONTACT_SOURCE,3E - Health services - A&E (Emergency Department)
+607649,Liaising with healthcare provider,observation,CONTACT_FACT.csv,CONTACT_SOURCE,3F - Health services - Other (e.g. hospice)
+46271599,Liaising with social worker,observation,CONTACT_FACT.csv,CONTACT_SOURCE,5A - LA services - Social care e.g. adults social care
+4208655,Liaising with agency,observation,CONTACT_FACT.csv,CONTACT_SOURCE,5B - LA services - Other internal (department other than social care in LA e.g. youth offending (excluding housing))
+4208655,Liaising with agency,observation,CONTACT_FACT.csv,CONTACT_SOURCE,5C - LA services - External e.g. from another LAs adult social care
+4176592,Liaising with police regarding subject,observation,CONTACT_FACT.csv,CONTACT_SOURCE,6 - Police
+46271610,Liaising with legal service,observation,CONTACT_FACT.csv,CONTACT_SOURCE,"7 - Other legal agency - including courts, probation, immigration, CAFCASS, prison"
+4208655,Liaising with agency,observation,CONTACT_FACT.csv,CONTACT_SOURCE,"8 - Other - Including children's centres, independent agency providers, voluntary organisations"
+4073054,Liaising with,observation,CONTACT_FACT.csv,CONTACT_SOURCE,9 - Anonymous
+4094021,Behavioral disability,observation,DISBAILITY_FACT.csv,DISABILITY_DESCRIPTION,Behaviour
+4150614,Communication disorder,observation,DISBAILITY_FACT.csv,DISABILITY_DESCRIPTION,Communication
+35816162,"Autism, Asperger's or autistic spectrum disorder",observation,DISBAILITY_FACT.csv,DISABILITY_DESCRIPTION,Diagnosed with Autism or Asperger's syndrome
+4190569,Other category,observation,DISBAILITY_FACT.csv,DISABILITY_DESCRIPTION,Disabled under DDA but not in the other categories
+4027470,Feeding disability,observation,DISBAILITY_FACT.csv,DISABILITY_DESCRIPTION,Eating & Drinking
+4027472,Hand function disability,observation,DISBAILITY_FACT.csv,DISABILITY_DESCRIPTION,Hand function
+44790126,Hearing disability,observation,DISBAILITY_FACT.csv,DISABILITY_DESCRIPTION,Hearing
+444035,Incontinence,observation,DISBAILITY_FACT.csv,DISABILITY_DESCRIPTION,Incontinence
+4235390,Learning disability - specialty,observation,DISBAILITY_FACT.csv,DISABILITY_DESCRIPTION,Learning
+44789133,Physical disability,observation,DISBAILITY_FACT.csv,DISABILITY_DESCRIPTION,Mobility
+4190569,Other category,observation,DISBAILITY_FACT.csv,DISABILITY_DESCRIPTION,Other Disability/Health Problem
+4027468,Personal care disability,observation,DISBAILITY_FACT.csv,DISABILITY_DESCRIPTION,Personal care
+44789132,Visual disability,observation,DISBAILITY_FACT.csv,DISABILITY_DESCRIPTION,Vision
+36310768,Attention deficit disorder/Attention deficit hyperactivity disorder (ADD/ADHD),observation,DISBAILITY_FACT.csv,HEALTH_CONDITION,ADD/ADHD
+4053178,Asperger's disorder,observation,DISBAILITY_FACT.csv,HEALTH_CONDITION,Aspergers
+45877009,Asthma,observation,DISBAILITY_FACT.csv,HEALTH_CONDITION,Asthma
+36210232,Autism,observation,DISBAILITY_FACT.csv,HEALTH_CONDITION,Autism
+706290,Birth defects,observation,DISBAILITY_FACT.csv,HEALTH_CONDITION,Birth Defect
+4165529,CHARGE syndrome,observation,DISBAILITY_FACT.csv,HEALTH_CONDITION,c.h.a.r.g.e. Syndrome
+36308867,Cerebral palsy,observation,DISBAILITY_FACT.csv,HEALTH_CONDITION,Cerebral Palsy
+45878997,Depression,observation,DISBAILITY_FACT.csv,HEALTH_CONDITION,Depression
+436077,Developmental delay,observation,DISBAILITY_FACT.csv,HEALTH_CONDITION,Developmental Delay
+45879799,Diabetes,observation,DISBAILITY_FACT.csv,HEALTH_CONDITION,Diabetes
+45880552,Down syndrome,observation,DISBAILITY_FACT.csv,HEALTH_CONDITION,Downs Syndrome
+442335,Dyslexia,observation,DISBAILITY_FACT.csv,HEALTH_CONDITION,Dyslexia
+4290260,Dyspraxia,observation,DISBAILITY_FACT.csv,HEALTH_CONDITION,Dyspraxia
+380378,Epilepsy,observation,DISBAILITY_FACT.csv,HEALTH_CONDITION,Epilepsy
+4004785,Fetal alcohol syndrome,observation,DISBAILITY_FACT.csv,HEALTH_CONDITION,Foetal Alcohol Syndrome
+4075828,Global developmental delay,observation,DISBAILITY_FACT.csv,HEALTH_CONDITION,Global Delay
+381592,Chronic mucoid otitis media,observation,DISBAILITY_FACT.csv,HEALTH_CONDITION,Glue Ear
+440374,Obsessive Compulsive Disorder,observation,DISBAILITY_FACT.csv,HEALTH_CONDITION,Obsessive Compulsive Disorder
+4283381,Spina bifida,observation,DISBAILITY_FACT.csv,HEALTH_CONDITION,Spina Bifidia
+36308642,Tourette's syndrome,observation,DISBAILITY_FACT.csv,HEALTH_CONDITION,Tourette's Syndrome
+4176135,Double Y syndrome,observation,DISBAILITY_FACT.csv,HEALTH_CONDITION,XYY Syndrome
+45884262,Unknown Source,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,10 - Unknown
+46273928,Liaising with family,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,1A - Individual - Family member/relative/carer
+46273219,Liaising with patient,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,1C - individual - Self
+46271604,Liaising with education service,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,2A - Schools
+46271604,Liaising with education service,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,2B - Education Services
+46271604,Liaising with education service,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,2C - Early Years
+46271604,Liaising with education service,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,2D - Children's Centres
+46271604,Liaising with education service,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,2E - Primary School
+46271604,Liaising with education service,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,2F - Secondary School
+46271601,Liaising with physician,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,3A - Health services - GP
+607649,Liaising with healthcare provider,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,3B - Health services - Health Visitor
+44808278,Liaison with school nurse,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,3C - Health services - School Nurse
+607649,Liaising with healthcare provider,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,3D - Health services - Other primary health services
+4073054,Liaising with [modifier] Emergency services,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,3E - Health services - A&E (Emergency Department)
+607649,Liaising with healthcare provider,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,3F - Health services - Other (e.g. hospice)
+607649,Liaising with healthcare provider,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,3G - Health services - CAMH
+607649,Liaising with healthcare provider,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,3H - Health services - Comm Paeds
+44806393,Liaison with midwife,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,3J - Health services - Midwife
+607649,Liaising with healthcare provider,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,3K - DAAT
+36713619,Liaising with housing service,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,4 - Housing (LA housing or housing association)
+4208655,Liaising with agency,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,4B - DC - non Housing
+4208655,Liaising with agency,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,5 - District Cambs City
+4208655,Liaising with agency,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,5 - District East Cambs
+4208655,Liaising with agency,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,5 - District Hun/St Ives
+4208655,Liaising with agency,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,5 - District RST/St Neots
+4208655,Liaising with agency,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,5 - District South Cambs
+4208655,Liaising with agency,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,5 - District Wisbech
+46271599,Liaising with social worker,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,5A - LA services - Social care e.g. adults social care
+4208655,Liaising with agency,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,5B - Adult Services
+4208655,Liaising with agency,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,5B - LA services - Other internal (department other than social care in LA e.g. youth offending (excluding housing))
+4208655,Liaising with agency,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,5C - LA services - External e.g. from another LAs adult social care
+4022252,Liaising with multidisciplinary team,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,5D - MASH - Green
+4176592,Liaising with police regarding subject,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,6 - Police
+46271610,Liaising with legal service,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,"7 - Other legal agency - including courts, probation, immigration, CAFCASS, prison"
+4208655,Liaising with agency,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,"8 - Other - Including children's centres, independent agency providers, voluntary organisations"
+4073054,Liaising with,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,9 - Anonymous
+607649,Liaising with healthcare provider,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,Health services - Adult Mental Health
+4073054,Liaising with [modifier] Employee assistance program,observation,EARLY_HELP_CONTACT_FACT.csv,CONTACT_SOURCE,Jobcentre Plus
+45882691,English,observation,LANGUAGE_FACT.csv,LANGUAGE_DESC,English
+38003600,African,person,PERSON_DIM.csv,ETHNICITY_DESCRIPTION,African
+38003575,Bangladeshi,person,PERSON_DIM.csv,ETHNICITY_DESCRIPTION,Bangladeshi
+38003579,Chinese,person,PERSON_DIM.csv,ETHNICITY_DESCRIPTION,Chinese
+38003589,Pakistani,person,PERSON_DIM.csv,ETHNICITY_DESCRIPTION,Pakistani
+8532,FEMALE,observation,PERSON_DIM.csv,GENDER,Female
+46270485,Indeterminate sex,observation,PERSON_DIM.csv,GENDER,Indeterminate
+8507,MALE,observation,PERSON_DIM.csv,GENDER,Male
+-,do not map,observation,PERSON_DIM.csv,GENDER,Unborn
+4320153,Afghanistan,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Afghan
+4320165,Albania,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Albanian
+4072105,Algeria,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Algerian
+4330442,United States of America,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,American
+4075205,Angola,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Angolan
+4073750,Argentina,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Argentinian
+41881315,Australia,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Australian
+4329596,Austria,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Austrian
+4329584,Bangladesh,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Bangladeshi
+41890291,Belgium,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Belgian
+41892130,Brazil,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Brazilian
+42035286,United Kingdom,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,British
+4330429,Bulgaria,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Bulgarian
+41915371,Canada,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Canadian
+4073752,Chile,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Chilean
+41921547,China,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Chinese
+4072108,Republic of the Congo,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Congolese
+4075639,Cuba,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Cuban
+4329599,Cyprus,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Cypriot
+4320163,Czech republic,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Czech
+41930999,Denmark,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Danish
+42032171,Netherlands,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Dutch
+4073737,Egypt,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Egyptian
+4320168,England,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,English
+40481806,Eritrea,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Eritrean
+4320166,Estonia,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Estonian
+4071835,Ethiopia,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Ethiopean
+4320159,Fiji,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Fijian
+4320323,Finland,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Finnish
+41928898,France,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,French
+4329171,Georgia,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Georgian
+41970930,Germany,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,German
+4330430,Greece,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Greek
+4320164,Hungary,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Hungarian
+4330436,Iceland,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Icelandic
+4320154,India,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Indian
+4329582,Indonesia,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Indonesian
+4329588,Islamic Republic of Iran,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Iranian
+4320308,Iraq,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Iraqi
+4330438,Ireland,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Irish
+41995088,Israel,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Israeli
+41987173,Italy,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Italian
+4072762,Jamaica,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Jamaican
+42006858,Japan,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Japanese
+4075204,Kenya,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Kenyan
+42018935,South Korea,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Korean
+4154060,Born in Kosovo,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Kosovan
+4329589,Kuwait,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Kuwaiti
+4320319,Latvia,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Latvian
+4072106,Libya,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Libyan
+4329600,Lithuania,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Lithuanian
+4329600,Lithuania,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Lithunian
+4208477,North Macedonia,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Macedonian
+4330325,Malaysia,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Malaysian
+4075636,Mexico,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Mexican
+4320320,Republic of Moldova,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Moldovan
+4071834,Morocco,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Moroccan
+4329593,New Zealand,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,New Zealander
+4073748,Nigeria,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Nigerian
+4328758,Norway,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Norwegian
+45877986,Unknown,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Not Supplied
+4329586,Pakistan,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Pakistani
+42075097,Palestine,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Palestinian
+4320305,Republic of the Philippines,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Philippino
+4329597,Poland,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Polish
+4320170,Portugal,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Portuguese
+4330431,Romania,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Romanian
+37162241,Russian Federation,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Russian
+42014333,Saudi Arabia,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Saudi Arabian
+4330439,Scotland,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Scottish
+40480046,Republic of Serbia,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Serbian
+4320295,Slovenia,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Slovenian
+4075202,Somalia,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Somalian
+42014353,South Africa,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,South African
+42020824,Spain,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Spanish
+4320156,Sri Lanka,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Sri Lankan
+4075198,Sudan,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Sudanese
+42030997,Sweden,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Swedish
+4330427,Switzerland,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Swiss
+4320310,Syrian Arab Republic,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Syrian
+4178927,Taiwan,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Taiwanese
+4320152,Thailand,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Thai
+4133506,Turkiye,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Turkish
+4071840,Uganda,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Ugandan
+4320321,Ukraine,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Ukranian
+4075648,Uruguay,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Uruguayan
+4330326,Viet Nam,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Vietnamese
+4075643,Saint Vincent and the Grenadines,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Vincentian
+4075633,Yugoslavia,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Yugoslavian
+4073744,Zimbabwe,observation,PERSON_DIM.csv,NATIONALITY_DESCRIPTION,Zimbabwean
+4052350,Agnostic,observation,PERSON_DIM.csv,RELIGION_DESCRIPTION,Agnostic
+4156961,Anglican,observation,PERSON_DIM.csv,RELIGION_DESCRIPTION,Anglican
+4058124,Atheist,observation,PERSON_DIM.csv,RELIGION_DESCRIPTION,Atheist
+4051382,"Baptist, follower of religion",observation,PERSON_DIM.csv,RELIGION_DESCRIPTION,Baptist
+4203579,"Buddhist, follower of religion",observation,PERSON_DIM.csv,RELIGION_DESCRIPTION,Buddhist
+4052936,"Christian, follower of religion",observation,PERSON_DIM.csv,RELIGION_DESCRIPTION,Christian
+4052936,"Christian, follower of religion",observation,PERSON_DIM.csv,RELIGION_DESCRIPTION,Christian
+4148978,Church of England,observation,PERSON_DIM.csv,RELIGION_DESCRIPTION,Church of England
+4179372,Greek Orthodox,observation,PERSON_DIM.csv,RELIGION_DESCRIPTION,Greek Orthodox
+4052018,"Hindu, follower of religion",observation,PERSON_DIM.csv,RELIGION_DESCRIPTION,Hindu
+4051379,"Jewish, follower of religion",observation,PERSON_DIM.csv,RELIGION_DESCRIPTION,Je - Jewish
+4172697,Jehovah's Witness religion,observation,PERSON_DIM.csv,RELIGION_DESCRIPTION,Jehovah Witness
+4051379,"Jewish, follower of religion",observation,PERSON_DIM.csv,RELIGION_DESCRIPTION,Judaism
+4028345,Church of Jesus Christ of Latter Day Saints,observation,PERSON_DIM.csv,RELIGION_DESCRIPTION,Latter Day Saints
+4052941,"Methodist, follower of religion",observation,PERSON_DIM.csv,RELIGION_DESCRIPTION,Methodist
+4147079,"Muslim, follower of religion",observation,PERSON_DIM.csv,RELIGION_DESCRIPTION,Muslim
+4052938,Not religious,observation,PERSON_DIM.csv,RELIGION_DESCRIPTION,No - None
+4052938,Not religious,observation,PERSON_DIM.csv,RELIGION_DESCRIPTION,No Religion
+4190569,Other category,observation,PERSON_DIM.csv,RELIGION_DESCRIPTION,Ot - Other
+4052943,"Pentecostalist, follower of religion",observation,PERSON_DIM.csv,RELIGION_DESCRIPTION,Pentecostalist
+4058123,"Roman Catholic, follower of religion",observation,PERSON_DIM.csv,RELIGION_DESCRIPTION,Roman Catholic
+4180466,"Russian Orthodox, follower of religion",observation,PERSON_DIM.csv,RELIGION_DESCRIPTION,Russian Orthodox
+4280566,"Sikh, follower of religion",observation,PERSON_DIM.csv,RELIGION_DESCRIPTION,Sikh
+4258129,Referral by [qualitfier] Unknown,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,10 - Unknown
+4138519,Referral by relative,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,1A - Individual - Family member/relative/carer
+4258129,Referral by [qualitfier] Acquaintance,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,1B - Individual - Acquaintance (including neighbours and child minders)
+4138517,Self-referral,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,1C - individual - Self
+4146787,Referral by person,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,"1D - Individual - Other (including strangers, MPs)"
+4138516,Referral by school teacher,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,2A - Schools
+44812185,Referral by education service,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,2B - Education Services
+44812185,Referral by education service,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,2C - Early Years
+44812185,Referral by education service,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,2D - Children's Centres
+4140955,Referral by GP,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,3A - Health services - GP
+506639,Referral by health visitor,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,3B - Health services - Health Visitor
+4140060,Referral by school nurse,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,3C - Health services - School Nurse
+4140032,Referral by [qualifier] Primary care service,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,3D - Health services - Other primary health services
+4287781,Referral by accident and emergency,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,3E - Health services - A&E (Emergency Department)
+4140032,Referral by health worker,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,3F - Health services - Other (e.g. hospice)
+44791850,Referral by mental health service,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,3G - Health services - CAMH
+44806052,Referral by housing service,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,4 - Housing (LA housing or housing association)
+44787834,Referral by social services,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,5A - LA services - Social care e.g. adults social care
+4258129,Referral by [qualitfier] Local authority,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,5B - LA services - Other internal (department other than social care in LA e.g. youth offending (excluding housing))
+4258129,Referral by [qualitfier] Local authority,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,5C - LA services - External e.g. from another LAs adult social care
+44812186,Referral by police,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,6 - Police
+44787859,Referral by criminal justice system,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,"7 - Other legal agency - including courts, probation, immigration, CAFCASS, prison"
+44812252,Referral by private agency,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,"8 - Other - Including children's centres, independent agency providers, voluntary organisations"
+4258129,Referral by [qualitfier] Unknown,observation,REFERRAL_FACT.csv,﻿CONTACT_SOURCE,9 - Anonymous
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
