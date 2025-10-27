@@ -1,15 +1,15 @@
 # CADRE-Data-Dictionary
 | Table Name | Description |
 |-------------|-------------|
-| [Address History](#Address-History) | Contains details of patient allergies and intolerances, including type, severity, and onset/stop dates. |
-| [Catergory of Need](#Catergory-of-Need) | Records diagnosed conditions, their codes, and associated encounters or visits. |
-| [CLA Fact](#CLA-Fact) | Holds demographic information such as age, gender, and race of each individual. |
-| [Contact Fact](#Contact-Fact) | Logs patient visits or encounters, including dates and visit types (inpatient, outpatient, etc.). |
-| [Disability Fact](#CLA-Fact) | Holds demographic information such as age, gender, and race of each individual. |
-| [Early Help Contact Fact](#Early-Help-Contact-Fact) | Holds demographic information such as age, gender, and race of each individual. |
-| [Language Fact](#Language-Fact) | Holds demographic information such as age, gender, and race of each individual. |
-| [Person Dim](#Person-Dim) | Holds demographic information such as age, gender, and race of each individual. |
-| [Referral Fact](#Referral-Fact) | Holds demographic information such as age, gender, and race of each individual. |
+| [Address History](#Address-History) | Details of patient addresses. |
+| [Category of Need](#Category-of-Need) | Category of adverse experience. |
+| [CLA Fact](#CLA-Fact) | Details of children looked after experience. |
+| [Contact Fact](#Contact-Fact) | Description of contact method. |
+| [Disability Fact](#CLA-Fact) | Description of disability. |
+| [Early Help Contact Fact](#Early-Help-Contact-Fact) | Description of early help contact method. |
+| [Language Fact](#Language-Fact) | Description of language used. |
+| [Person Dim](#Person-Dim) | Description of culture and religion. |
+| [Referral Fact](#Referral-Fact) | Source of referral. |
 
 ## Address History
 |Concept ID|Mapping                                                                                               |OMOP Table |Table                      |Variable               |Response                                                                                                            |
@@ -18,7 +18,7 @@
 |37019469  |Alternative                                                                                           |observation|ADDRESS_HIST_DIM.csv       |ADDRESS_TYPE           |Placement                                                                                                           |
 |45879080  |Primary                                                                                               |observation|ADDRESS_HIST_DIM.csv       |ADDRESS_TYPE           |Primary                                                                                                             |
 |37019469  |Alternative                                                                                           |observation|ADDRESS_HIST_DIM.csv       |ADDRESS_TYPE           |Short Break Placement                                                                                               |
-## Catergory of Need
+## Category of Need
 |Concept ID|Mapping                                                                                               |OMOP Table |Table                      |Variable               |Response                                                                                                            |
 |----------|------------------------------------------------------------------------------------------------------|-----------|---------------------------|-----------------------|--------------------------------------------------------------------------------------------------------------------|
 |46237191  |General-Neglect or Abuse Suspected                                                                    |observation|CATEGORY_OF_NEED_FACT.csv  |﻿CATEGORY_OF_NEED      |N1 - Abuse or neglect                                                                                               |
