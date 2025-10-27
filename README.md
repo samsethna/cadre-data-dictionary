@@ -1,4 +1,16 @@
-# CADRE-data-dictionary
+# CADRE-Data-Dictionary
+| Table Name | Description |
+|-------------|-------------|
+| [Address History](#Address-History) | Contains details of patient allergies and intolerances, including type, severity, and onset/stop dates. |
+| [Catergory of Need](#Catergory-of-Need) | Records diagnosed conditions, their codes, and associated encounters or visits. |
+| [CLA Fact](#CLA-Fact) | Holds demographic information such as age, gender, and race of each individual. |
+| [Contact Fact](#Contact-Fact) | Logs patient visits or encounters, including dates and visit types (inpatient, outpatient, etc.). |
+| [Disability Fact](#CLA-Fact) | Holds demographic information such as age, gender, and race of each individual. |
+| [Early Help Contact Fact](#Early-Help-Contact-Fact) | Holds demographic information such as age, gender, and race of each individual. |
+| [Language Fact](#Language-Fact) | Holds demographic information such as age, gender, and race of each individual. |
+| [Person Dim](#Person-Dim) | Holds demographic information such as age, gender, and race of each individual. |
+| [Referral Fact](#Referral-Fact) | Holds demographic information such as age, gender, and race of each individual. |
+
 ## Address History
 |Concept ID|Mapping                                                                                               |OMOP Table |Table                      |Variable               |Response                                                                                                            |
 |----------|------------------------------------------------------------------------------------------------------|-----------|---------------------------|-----------------------|--------------------------------------------------------------------------------------------------------------------|
@@ -6,7 +18,7 @@
 |37019469  |Alternative                                                                                           |observation|ADDRESS_HIST_DIM.csv       |ADDRESS_TYPE           |Placement                                                                                                           |
 |45879080  |Primary                                                                                               |observation|ADDRESS_HIST_DIM.csv       |ADDRESS_TYPE           |Primary                                                                                                             |
 |37019469  |Alternative                                                                                           |observation|ADDRESS_HIST_DIM.csv       |ADDRESS_TYPE           |Short Break Placement                                                                                               |
-## Category of Need
+## Catergory of Need
 |Concept ID|Mapping                                                                                               |OMOP Table |Table                      |Variable               |Response                                                                                                            |
 |----------|------------------------------------------------------------------------------------------------------|-----------|---------------------------|-----------------------|--------------------------------------------------------------------------------------------------------------------|
 |46237191  |General-Neglect or Abuse Suspected                                                                    |observation|CATEGORY_OF_NEED_FACT.csv  |﻿CATEGORY_OF_NEED      |N1 - Abuse or neglect                                                                                               |
@@ -299,5 +311,4 @@
 |44812186  |Referral by police                                                                                    |observation|REFERRAL_FACT.csv          |﻿CONTACT_SOURCE        |6 - Police                                                                                                          |
 |44787859  |Referral by criminal justice system                                                                   |observation|REFERRAL_FACT.csv          |﻿CONTACT_SOURCE        |7 - Other legal agency - including courts, probation, immigration, CAFCASS, prison                                  |
 |44812252  |Referral by private agency                                                                            |observation|REFERRAL_FACT.csv          |﻿CONTACT_SOURCE        |8 - Other - Including children's centres, independent agency providers, voluntary organisations                     |
-
 |4258129   |Referral by [qualitfier] Unknown                                                                      |observation|REFERRAL_FACT.csv          |﻿CONTACT_SOURCE        |9 - Anonymous                                                                                                       |
