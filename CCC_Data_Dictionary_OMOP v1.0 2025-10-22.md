@@ -4,7 +4,7 @@
 | [Category of Need](#Category-of-Need) | Category of adverse experience. |
 | [CLA Fact](#CLA-Fact) | Details of children looked after experience. |
 | [Contact Fact](#Contact-Fact) | Description of contact method. |
-| [Disability Fact](#CLA-Fact) | Description of disability. |
+| [Disability Fact](#Disability-Fact) | Description of disability. |
 | [Early Help Contact Fact](#Early-Help-Contact-Fact) | Description of early help contact method. |
 | [Language Fact](#Language-Fact) | Description of language used. |
 | [Person Dim](#Person-Dim) | Description of culture and religion. |
@@ -310,4 +310,5 @@
 |44812186  |Referral by police                                                                                    |observation|REFERRAL_FACT.csv          |﻿CONTACT_SOURCE        |6 - Police                                                                                                          |
 |44787859  |Referral by criminal justice system                                                                   |observation|REFERRAL_FACT.csv          |﻿CONTACT_SOURCE        |7 - Other legal agency - including courts, probation, immigration, CAFCASS, prison                                  |
 |44812252  |Referral by private agency                                                                            |observation|REFERRAL_FACT.csv          |﻿CONTACT_SOURCE        |8 - Other - Including children's centres, independent agency providers, voluntary organisations                     |
+
 |4258129   |Referral by [qualitfier] Unknown                                                                      |observation|REFERRAL_FACT.csv          |﻿CONTACT_SOURCE        |9 - Anonymous                                                                                                       |
