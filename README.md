@@ -5,7 +5,7 @@
 | [Category of Need](#Category-of-Need) | Category of adverse experience. |
 | [CLA Fact](#CLA-Fact) | Details of children looked after experience. |
 | [Contact Fact](#Contact-Fact) | Description of contact method. |
-| [Disability Fact](#CLA-Fact) | Description of disability. |
+| [Disability Fact](#Disability-Fact) | Description of disability. |
 | [Early Help Contact Fact](#Early-Help-Contact-Fact) | Description of early help contact method. |
 | [Language Fact](#Language-Fact) | Description of language used. |
 | [Person Dim](#Person-Dim) | Description of culture and religion. |
