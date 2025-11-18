@@ -1,16 +1,15 @@
 # CADRE-Data-Dictionary
 | Table Name | Description |
 |-------------|-------------|
-| [Address History](#Address-History) | Details of patient addresses. |
-| [Category of Need](#Category-of-Need) | Category of adverse experience. |
-| [CLA Fact](#CLA-Fact) | Details of children looked after experience. |
-| [Contact Fact](#Contact-Fact) | Description of contact method. |
-| [Disability Fact](#Disability-Fact) | Description of disability. |
-| [Early Help Contact Fact](#Early-Help-Contact-Fact) | Description of early help contact method. |
-| [Language Fact](#Language-Fact) | Description of language used. |
-| [Person Dim](#Person-Dim) | Description of culture and religion. |
-| [Referral Fact](#Referral-Fact) | Source of referral. |
-
+| [Address History](#Address-History) | Details of address type. |
+| [Category of Need](#Category-of-Need) | Category of need. |
+| [CLA Fact](#CLA-Fact) | Details of category of need, CLA ceased reason, and legal status. |
+| [Contact Fact](#Contact-Fact) |  Details of contact source. |
+| [Disability Fact](#Disability-Fact) | Description of disability, and health condition. |
+| [Early Help Contact Fact](#Early-Help-Contact-Fact) | Details of early help contact source. |
+| [Language Fact](#Language-Fact) | Description of language. |
+| [Person Dim](#Person-Dim) | Description of ethnicity, gender, nationality, and religion. |
+| [Referral Fact](#Referral-Fact) | Details for referral source. |
 ## Address History
 |Concept ID|Mapping                                                                                               |OMOP Table |Table                      |Variable               |Response                                                                                                            |
 |----------|------------------------------------------------------------------------------------------------------|-----------|---------------------------|-----------------------|--------------------------------------------------------------------------------------------------------------------|
