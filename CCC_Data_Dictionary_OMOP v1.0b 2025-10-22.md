@@ -4,7 +4,7 @@
 | [Category of Need](#Category-of-Need) | Category of need. |
 | [CLA Fact](#CLA-Fact) | Category of need, CLA ceased reason, and legal status. |
 | [Contact Fact](#Contact-Fact) | Contact source. |
-| [Disability Fact](#CLA-Fact) | Disability, and health condition. |
+| [Disability Fact](#Disability-Fact) | Disability, and health condition. |
 | [Early Help Contact Fact](#Early-Help-Contact-Fact) | Early help contact source. |
 | [Language Fact](#Language-Fact) | Language. |
 | [Person Dim](#Person-Dim) | Ethnicity, gender, nationality, and religion. |
@@ -310,4 +310,5 @@
 |observation|Referral by criminal justice system                                                                       |44787859  |7 - Other legal agency - including courts, probation, immigration, CAFCASS, prison                                  |﻿CONTACT_SOURCE        |REFERRAL_FACT.csv     |
 |observation|Referral by private agency                                                                                |44812252  |8 - Other - Including children's centres, independent agency providers, voluntary organisations                     |﻿CONTACT_SOURCE        |REFERRAL_FACT.csv     |
 |observation|Referral by [qualitfier] Unknown                                                                          |4258129   |9 - Anonymous                                                                                                       |﻿CONTACT_SOURCE        |REFERRAL_FACT.csv     |
+
 
