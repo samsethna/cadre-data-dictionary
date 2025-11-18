@@ -1,14 +1,14 @@
 | Table Name | Description |
 |-------------|-------------|
-| [Address History](#Address-History) | Details of address type. |
+| [Address History](#Address-History) | Address type. |
 | [Category of Need](#Category-of-Need) | Category of need. |
-| [CLA Fact](#CLA-Fact) | Details of category of need, CLA ceased reason, and legal status. |
-| [Contact Fact](#Contact-Fact) | Details of contact source. |
-| [Disability Fact](#CLA-Fact) | Description of disability, and health condition. |
-| [Early Help Contact Fact](#Early-Help-Contact-Fact) | Details of early help contact source. |
-| [Language Fact](#Language-Fact) | Description of language. |
-| [Person Dim](#Person-Dim) | Description of ethnicity, gender, nationality, and religion. |
-| [Referral Fact](#Referral-Fact) | Details for referral source. |
+| [CLA Fact](#CLA-Fact) | Category of need, CLA ceased reason, and legal status. |
+| [Contact Fact](#Contact-Fact) | Contact source. |
+| [Disability Fact](#CLA-Fact) | Disability, and health condition. |
+| [Early Help Contact Fact](#Early-Help-Contact-Fact) | Early help contact source. |
+| [Language Fact](#Language-Fact) | Language. |
+| [Person Dim](#Person-Dim) | Ethnicity, gender, nationality, and religion. |
+| [Referral Fact](#Referral-Fact) | Referral source. |
 
 ## Address History
 |Table|Variable|Response|Mapping|Concept ID|OMOP Table |
@@ -267,7 +267,6 @@
 |PERSON_DIM.csv       |RELIGION_DESCRIPTION   |Baptist                                                 |Baptist, follower of religion                           |4051382   |observation|
 |PERSON_DIM.csv       |RELIGION_DESCRIPTION   |Buddhist                                                |Buddhist, follower of religion                          |4203579   |observation|
 |PERSON_DIM.csv       |RELIGION_DESCRIPTION   |Christian                                               |Christian, follower of religion                         |4052936   |observation|
-|PERSON_DIM.csv       |RELIGION_DESCRIPTION   |Christian                                               |Christian, follower of religion                         |4052936   |observation|
 |PERSON_DIM.csv       |RELIGION_DESCRIPTION   |Church of England                                       |Church of England                                       |4148978   |observation|
 |PERSON_DIM.csv       |RELIGION_DESCRIPTION   |Greek Orthodox                                          |Greek Orthodox                                          |4179372   |observation|
 |PERSON_DIM.csv       |RELIGION_DESCRIPTION   |Hindu                                                   |Hindu, follower of religion                             |4052018   |observation|
@@ -310,4 +309,5 @@
 |REFERRAL_FACT.csv     |﻿CONTACT_SOURCE        |6 - Police                                                                                                          |Referral by police                                                                                    |44812186  |observation|
 |REFERRAL_FACT.csv     |﻿CONTACT_SOURCE        |7 - Other legal agency - including courts, probation, immigration, CAFCASS, prison                                  |Referral by criminal justice system                                                                   |44787859  |observation|
 |REFERRAL_FACT.csv     |﻿CONTACT_SOURCE        |8 - Other - Including children's centres, independent agency providers, voluntary organisations                     |Referral by private agency                                                                            |44812252  |observation|
+
 |REFERRAL_FACT.csv     |﻿CONTACT_SOURCE        |9 - Anonymous                                                                                                       |Referral by [qualitfier] Unknown                                                                      |4258129   |observation|
