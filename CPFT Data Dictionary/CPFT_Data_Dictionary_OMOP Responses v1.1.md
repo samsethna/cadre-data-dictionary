@@ -5,7 +5,7 @@
 | [Diagnosis](#Diagnosis) |Details of diagnosis for a client|
 | [Referral](#Referral) |This table contains details of clients' referrals including the HCP/Team/Specialty referred to, reason for referral and the referrer.|
 
-##Care_Plan_Interventions
+## Care_Plan_Interventions
 |OMOP Table    |Table                  |Field                                              |Response                                                  |Mapping                                                      |Concept ID|
 |--------------|-----------------------|---------------------------------------------------|----------------------------------------------------------|-------------------------------------------------------------|----------|
 |provider table|Care_Plan_Interventions|User_Main_Specialty_Description                    |Adult                                                     |Adult Medicine Physician                                     |38003854  |
@@ -20,7 +20,7 @@
 |provider table|Care_Plan_Interventions|User_Resp_Clinician_Profession_Description         |Occupation Therapist                                      |Occupational therapy                                         |38004492  |
 |provider table|Care_Plan_Interventions|User_Resp_Clinician_Profession_Description         |Registered Medical Practitioner including consultant or GP|Physician                                                    |32577     |
 |provider table|Care_Plan_Interventions|User_Resp_Clinician_Profession_Description         |Mental Health Nurse                                       |Child & Adolescent Psychiatric/Mental Health Registered Nurse|38003751  |
-##Care_Plan_Problems
+## Care_Plan_Problems
 |OMOP Table    |Table                  |Field                                              |Response                                                  |Mapping                                                      |Concept ID|
 |--------------|-----------------------|---------------------------------------------------|----------------------------------------------------------|-------------------------------------------------------------|----------|
 |provider table|Care_Plan_Problems     |User_Main_Specialty_Description                    |Adult                                                     |Adult Medicine Physician                                     |38003854  |
@@ -37,7 +37,7 @@
 |provider table|Care_Plan_Problems     |User_Resp_Clinician_Profession_Description         |Occupation Therapist                                      |Occupational therapy                                         |38004492  |
 |provider table|Care_Plan_Problems     |User_Resp_Clinician_Profession_Description         |Registered Medical Practitioner including consultant or GP|Physician                                                    |32577     |
 |provider table|Care_Plan_Problems     |User_Resp_Clinician_Profession_Description         |Mental Health Nurse                                       |Child & Adolescent Psychiatric/Mental Health Registered Nurse|38003751  |
-##Diagnosis
+## Diagnosis
 |OMOP Table    |Table                  |Field                                              |Response                                                  |Mapping                                                      |Concept ID|
 |--------------|-----------------------|---------------------------------------------------|----------------------------------------------------------|-------------------------------------------------------------|----------|
 |provider table|Diagnosis              |Entered_By_Main_Specialty_Description              |Adult                                                     |Adult Medicine Physician                                     |38003854  |
@@ -58,7 +58,7 @@
 |provider table|Diagnosis              |Removal_By_Main_Specialty_Description              |Psychological Medicine                                    |Psychology                                                   |38004488  |
 |provider table|Diagnosis              |Removal_By_Main_Specialty_Description              |Forensic Psychiatry                                       |Forensic psychiatry                                          |45756775  |
 |provider table|Diagnosis              |Removal_By_Resp_Clinician_Profession_Description   |Registered Medical Practitioner including consultant or GP|Physician                                                    |32577     |
-##Referral
+## Referral
 |OMOP Table    |Table                  |Field                                              |Response                                                  |Mapping                                                      |Concept ID|
 |--------------|-----------------------|---------------------------------------------------|----------------------------------------------------------|-------------------------------------------------------------|----------|
 |provider table|Referral               |Discharge_HCP_Main_Specialty_Description           |Adult                                                     |Adult Medicine Physician                                     |38003854  |
@@ -85,3 +85,4 @@
 |provider table|Referral               |Removal_User_Professional_Group_Description        |Psychological Therapies                                   |Psychology                                                   |38004488  |
 |provider table|Referral               |Removal_User_Professional_Group_Description        |Social Worker                                             |Social Worker                                                |38004499  |
 |provider table|Referral               |Specialty_Referred_To_Description                  |Psychiatry of Old Age                                     |Geriatric Psychiatry                                         |38004470  |
+
