@@ -1,6 +1,4 @@
 # CADRE-Data-Dictionary
-This repository provides the CADRE data dictionary in two alternative formats. 
-Data Dictionary v1.0a presents the fields in the following order: Table, Variable, Response, Mapping, Concept ID, OMOP Table.
-Data Dictionary v1.0b presents the same fields but ordered as follows: OMOP Table, Mapping, Concept ID, Response, Variable, Table.
-
-Both versions contain identical information; only the column arrangement differs. Users may select either file according to their preferred format.
+This repository contains the CADRE data dictionaries for the CCC and CPFT datasets.
+Both dictionaries present fields in the following order: OMOP Table, Source Table, Source Field, Source Response, OMOP Mapping, and OMOP Concept ID.
+Copies of both CSV files are available for download, allowing users to rearrange column order as needed.
