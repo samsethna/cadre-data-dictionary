@@ -1,0 +1,150 @@
+| Table Name | Description |
+|-------------|-------------|
+| [CP Plain fact](#CP-Plain-fact) |  |
+| [Strat Discussion](#Strat-Discussion) |  |
+| [Single Assessment](#Single-Assessment) |  |
+| [Contact](#Contact) | Contact source. |
+| [Referral](#Referral) |  |
+| [CLA](#CLA) |  |
+| [Early Help](#Early-Help) |  |
+| [Assessment Form](#Assessment-Form) |  |
+| [Address History](#Address-History) |  |
+| [Disability](#Disability) |  |
+| [Language Fact](#Language-Fact) |  |
+| [Person Fact](#Person-Fact) |  |
+| [S47 Enquiry End](#S47-Enquiry-End) |  |
+| [Category of Need](#Category-of-Need) |  |
+
+
+## CP Plain fact
+|Concept ID|Concept                                                            |Carrot Table              |OMOP Table          |Source Field                            |Description                                   |Source Table                |
+|----------|-------------------------------------------------------------------|--------------------------|--------------------|----------------------------------------|----------------------------------------------|----------------------------|
+|44806614  |Child protection category emotional                                |cp_plain_fact_1           |observation         |CP_CATEGORY_EMOTIONAL                   |CP reason flag emotional                      |CP_PLAIN_FACT.csv           |
+|44806612  |Child protection category neglect                                  |cp_plain_fact_1           |observation         |CP_CATEGORY_NEGLECT                     |CP reason flag neglect                        |CP_PLAIN_FACT.csv           |
+|44806615  |Child protection category physical                                 |cp_plain_fact_1           |observation         |CP_CATEGORY_PHYSICAL                    |CP reason flag physical                       |CP_PLAIN_FACT.csv           |
+|44806613  |Child protection category sexual                                   |cp_plain_fact_1           |observation         |CP_CATEGORY_SEXUAL                      |CP reason flag sexual                         |CP_PLAIN_FACT.csv           |
+|4053115   |Child removed from protection register                             |cp_plain_fact_2           |observation         |CP_END_DATE                             |End date                                      |CP_PLAIN_FACT.csv           |
+|N/A       |N/A                                                                |cp_plain_fact_1           |observation         |CP_START_DATE                           |Start date                                    |CP_PLAIN_FACT.csv           |
+## Strat Discussion
+|Concept ID|Concept                                                            |Carrot Table              |OMOP Table          |Source Field                            |Description                                   |Source Table                |
+|----------|-------------------------------------------------------------------|--------------------------|--------------------|----------------------------------------|----------------------------------------------|----------------------------|
+|44791869  |Social services care planning                                      |strat_disc                |procedure           |MEETING_DATE                            |Meeting date                                  |STRATEGY_DISCUSSION_FACT.csv|
+|1620966   |No further follow-up                                               |strat_disc                |measurement         |STR_DIS_OUTCOME_NFA                     |Outcome flag no further action                |STRATEGY_DISCUSSION_FACT.csv|
+|4189812   |Police investigation                                               |strat_disc                |observation         |STR_DIS_OUTCOME_POLICE_INVESTIGATION    |Outcome flag police investigation             |STRATEGY_DISCUSSION_FACT.csv|
+|4137059   |Transfer out of area                                               |strat_disc                |observation         |STR_DIS_OUTCOME_REF_OTHER_AGENCY        |Outcome flag referral to other agency         |STRATEGY_DISCUSSION_FACT.csv|
+|44795391  |Child protection investigation                                     |strat_disc                |procedure_occurrence|STR_DIS_OUTCOME_S47_INVESTIGATION       |Outcome flag S47 investigation                |STRATEGY_DISCUSSION_FACT.csv|
+|44787796  |Single assessment process                                          |strat_disc                |procedure_occurrence|STR_DIS_OUTCOME_SINGLE_ASSESSMENT       |Outcome flag single assessment                |STRATEGY_DISCUSSION_FACT.csv|
+## Single Assessment
+|Concept ID|Concept                                                            |Carrot Table              |OMOP Table          |Source Field                            |Description                                   |Source Table                |
+|----------|-------------------------------------------------------------------|--------------------------|--------------------|----------------------------------------|----------------------------------------------|----------------------------|
+|N/A       |N/A                                                                |single_assessment_end     |observation         |﻿ASSESSMENT_END_DATE                     |Assessment end date.                          |SINGLE_ASSESSMENT_FACT.csv  |
+|44787796  |Single assessment process                                          |single_assessment         |procedure_occurrence|ASSESSMENT_START_DATE                   |Assessment start date.                        |SINGLE_ASSESSMENT_FACT.csv  |
+|44813501  |Looked after child [with qualifier] request for                    |single_assessment_cla     |observation         |ASSESS_OUTCOME_CLA_REQUEST              |Outcome flag CLA (looked after child) request |SINGLE_ASSESSMENT_FACT.csv  |
+|4139252   |Legal proceedings                                                  |single_assessment         |observation         |ASSESS_OUTCOME_LEGAL_ACTION             |Outcome flag legal action                     |SINGLE_ASSESSMENT_FACT.csv  |
+|1620966   |No further follow-up                                               |single_assessment         |measurement         |ASSESS_OUTCOME_NFA                      |Outcome flag no further action                |SINGLE_ASSESSMENT_FACT.csv  |
+|4053115   |Child removed from protection register                             |single_assessment         |observation         |ASSESS_OUTCOME_SFA_S47_END              |Outcome flag end S47                          |SINGLE_ASSESSMENT_FACT.csv  |
+|44811639  |Child in private foster care                                       |single_assessment         |observation         |ASSESS_OUTCOME_PRIV_FOSTERING           |Outcome flag private fostering                |SINGLE_ASSESSMENT_FACT.csv  |
+|4148671   |Social services                                                    |single_assessment         |observation         |ASSESS_OUTCOME_PROVISION_OF_SERVICE     |Outcome flag provision of service             |SINGLE_ASSESSMENT_FACT.csv  |
+|4019826   |Respite care of patient                                            |single_assessment         |observation         |ASSESS_OUTCOME_PROV_SB_CARE             |Outcome flag provision of short break care    |SINGLE_ASSESSMENT_FACT.csv  |
+|4208328   |Referral to [with qualifier] Agency                                |single_assessment         |observation         |ASSESS_OUTCOME_REF_OTHER_AGENCY         |Outcome flag referral to other agency         |SINGLE_ASSESSMENT_FACT.csv  |
+|44798918  |Social services specialist assessment                              |single_assessment         |procedure_occurrence|ASSESS_OUTCOME_SPECIALIST_ASSESS        |Outcome flag specialist assessment            |SINGLE_ASSESSMENT_FACT.csv  |
+|4073156   |Discussion                                                         |single_assessment         |procedure_occurrence|ASSESS_OUTCOME_STRATEGY_DISCUSSION      |Outcome flag strategy discussion              |SINGLE_ASSESSMENT_FACT.csv  |
+|N/A       |Map as the provider associated with the assessment                 |single_assessment_provider|provider            |COMPLETED_BY_DEPT_NAME                  |Completed by department                       |SINGLE_ASSESSMENT_FACT.csv  |
+## Contact
+|Concept ID|Concept                                                            |Carrot Table              |OMOP Table          |Source Field                            |Description                                   |Source Table                |
+|----------|-------------------------------------------------------------------|--------------------------|--------------------|----------------------------------------|----------------------------------------------|----------------------------|
+|4167554   |Advice given                                                       |contact                   |observation         |﻿CNT_OUTCOME_ADVICE                      |Outcome flag advice                           |CONTACT_FACT.csv            |
+|44795391  |CP investigation                                                   |contact                   |procedure_occurrence|CNT_OUTCOME_CP_ENQUIRY                  |Outcome flag CP (protected child) enquiry     |CONTACT_FACT.csv            |
+|44804300  |Information dissemination and exchange                             |contact                   |observation         |CP_OUTCOME_EXISTING_REFERRAL            |Outcome flag existing referral                |CONTACT_FACT.csv            |
+|45881342  |Missing child/infant                                               |contact                   |measurement         |CNT_OUTCOME_MISSING                     |Outcome flag missing                          |CONTACT_FACT.csv            |
+|4144684   |Patient referral                                                   |contact                   |procedure_occurrence|CNT_OUTCOME_NEW_REFERRAL                |Outcome flag new referral                     |CONTACT_FACT.csv            |
+|1620966   |No further follow-up                                               |contact                   |measurement         |CNT_OUTCOME_NFA                         |Outcome flag no further action                |CONTACT_FACT.csv            |
+|4023148   |Adoption                                                           |contact                   |observation         |CNT_OUTCOME_NON_AGENCY_ADOPTION         |Outcome flag non-agency adoption              |CONTACT_FACT.csv            |
+|4208655   |Liasing with agency                                                |contact                   |observation         |CNT_OUTCOME_OTHER_LOCAL_AUTH_CP         |Outcome flag other local authority            |CONTACT_FACT.csv            |
+|44811639  |Child in private foster care                                       |contact                   |observation         |CNT_OUTCOME_PRIVATE_FOSTERING           |Outcome flag private fostering                |CONTACT_FACT.csv            |
+|N/A       |N/A                                                                |contact                   |observation         |CONTACT_DATE                            |Date of contact                               |CONTACT_FACT.csv            |
+|N/A       |Map directly to response                                           |contact                   |observation         |CONTACT_SOURCE                          |Source of contact                             |CONTACT_FACT.csv            |
+|N/A       |Map as the provider associated with the procedure                  |contact_provider          |provider            |DEPARTMENT                              |Department                                    |CONTACT_FACT.csv            |
+## Referral
+|Concept ID|Concept                                                            |Carrot Table              |OMOP Table          |Source Field                            |Description                                   |Source Table                |
+|----------|-------------------------------------------------------------------|--------------------------|--------------------|----------------------------------------|----------------------------------------------|----------------------------|
+|N/A       |Map directly to response                                           |referral                  |observation         |﻿CONTACT_SOURCE                          |Source of referral                            |REFERRAL_FACT.csv           |
+|N/A       |N/A                                                                |referral_end              |observation         |REFERRAL_END_DATE                       |Referral end date                             |REFERRAL_FACT.csv           |
+|          |                                                                   |referral_end              |observation         |REFERRAL_END_REASON                     |Reason for referral end                       |REFERRAL_FACT.csv           |
+|4084207   |Social care                                                        |referral                  |procedure           |REFERRAL_START_DATE                     |Referral start date                           |REFERRAL_FACT.csv           |
+|N/A       |Map as the provider associated with the procedure                  |referral_provider         |provider            |REFERRAL_TO_TEAM                        |Team to which referral was made               |REFERRAL_FACT.csv           |
+|36674640  |Aging out of youth care system                                     |referral                  |observation         |REF_OUTCOME_CARE_LEAVER                 |Outcome flag care leaver                      |REFERRAL_FACT.csv           |
+|44813501  |Looked after child                                                 |referral                  |observation         |REF_OUTCOME_CLA                         |Outcome flag CLA (looked after child)         |REFERRAL_FACT.csv           |
+|4237323   |Child protection case conference                                   |referral                  |observation         |REF_OUTCOME_CP_CONFERENCE               |Outcome flag CP (protected child) conference  |REFERRAL_FACT.csv           |
+|37175356  |Referred by outside establishment                                  |referral                  |observation         |REF_OUTCOME_CP_TRANSFER_IN              |Outcome flag CP (protected child) transfer in |REFERRAL_FACT.csv           |
+|1620966   |No further follow-up                                               |referral                  |measurement         |REF_OUTCOME_NFA                         |Outcome flag no further action                |REFERRAL_FACT.csv           |
+|4023148   |Adoption                                                           |referral                  |observation         |REF_OUTCOME_NON_AGENCY_ADDOPTION        |Outcome flag non-agency adoption              |REFERRAL_FACT.csv           |
+|44811639  |Child in private foster care                                       |referral                  |observation         |REF_OUTCOME_PRIVATE_FOSTERING           |Outcome flag private fostering                |REFERRAL_FACT.csv           |
+|44787796  |Single assessment process                                          |referral                  |procedure_occurrence|REF_OUTCOME_SINGLE_ASSESSMENT           |Outcome flag single assessment                |REFERRAL_FACT.csv           |
+|4073156   |Discussion                                                         |referral                  |procedure_occurrence|REF_OUTCOME_STRATEGY_DISCUSSION         |Outcome flag strategy discussion              |REFERRAL_FACT.csv           |
+## CLA
+|Concept ID|Concept                                                            |Carrot Table              |OMOP Table          |Source Field                            |Description                                   |Source Table                |
+|----------|-------------------------------------------------------------------|--------------------------|--------------------|----------------------------------------|----------------------------------------------|----------------------------|
+|N/A       |Map directly to response                                           |cla                       |observation         |﻿CATEGORY_OF_NEED                        |Category of need code                         |CLA_FACT.csv                |
+|N/A       |Map directly to response                                           |cla_end                   |observation         |CLA_CEASED_REASON                       |Reason CLA status ceased                      |CLA_FACT.csv                |
+|44813501  |Looked after child                                                 |cla                       |observation         |DATE_BECAME_LOOKED_AFTER                |Date became looked after                      |CLA_FACT.csv                |
+|44805601  |No longer subject of looked after child arrangement                |cla_end                   |observation         |DATE_CEASED_LOOKED_AFTER                |Date looked after status ceased               |CLA_FACT.csv                |
+|4313583   |Legal status                                                       |cla                       |observation         |LEGAL_STATUS                            |Legal status                                  |CLA_FACT.csv                |
+## Early Help
+|Concept ID|Concept                                                            |Carrot Table              |OMOP Table          |Source Field                            |Description                                   |Source Table                |
+|----------|-------------------------------------------------------------------|--------------------------|--------------------|----------------------------------------|----------------------------------------------|----------------------------|
+|N/A       |N/A                                                                |early_help                |observation         |﻿CONTACT_DATE                           |Date of contact                               |EARLY_HELP_CONTACT_FACT.csv |
+|N/A       |Map directly to response                                           |early_help                |observation         |CONTACT_SOURCE                          |Source of contact                             |EARLY_HELP_CONTACT_FACT.csv |
+|N/A       |Map as the provider associated with the procedure                  |early_help_provider       |provider            |DEPARTMENT                              |Department providing EH                       |EARLY_HELP_CONTACT_FACT.csv |
+|44804300  |Information dissemination and exchange                             |early_help                |observation         |EHCNT_OUTCOME_EHCP                      |Outcome flag early help                       |EARLY_HELP_CONTACT_FACT.csv |
+|4208655   |Liasing with agency                                                |early_help                |observation         |EHCNT_OUTCOME_MASH                      |Outcome flag multi agency safeguarding        |EARLY_HELP_CONTACT_FACT.csv |
+|1620966   |No further follow-up                                               |early_help                |measurement         |EHCNT_OUTCOME_NFA                       |Outcome flag no further action                |EARLY_HELP_CONTACT_FACT.csv |
+## Assessment Form
+|Concept ID|Concept                                                            |Carrot Table              |OMOP Table          |Source Field                            |Description                                   |Source Table                |
+|----------|-------------------------------------------------------------------|--------------------------|--------------------|----------------------------------------|----------------------------------------------|----------------------------|
+|N/A       |Map as the provider associated with the assessment                 |assessment_form_provider  |provider            |COMPLETE_BY_DEPARTMENT                  |Completed by department                       |ASSESSMENT_FORM_FACT.csv    |
+|44810426  |Framework for the Assessment of Children in Need and their Families|assessment_form           |procedure_occurrence|FORM_DESCRIPTION                        |Description of form                           |ASSESSMENT_FORM_FACT.csv    |
+|N/A       |Map directly to response                                           |assessment_form           |survey_conduct      |QUESTION                                |Question text                                 |ASSESSMENT_FORM_FACT.csv    |
+## Address History
+|Concept ID|Concept                                                            |Carrot Table              |OMOP Table          |Source Field                            |Description                                   |Source Table                |
+|----------|-------------------------------------------------------------------|--------------------------|--------------------|----------------------------------------|----------------------------------------------|----------------------------|
+|37021525  |Address type                                                       |address                   |observation         |ADDRESS_TYPE                            |Address type                                  |ADDRESS_HIST_DIM.csv        |
+|N/A       |Store in location:county                                           |location                  |location            |LSOA                                    |Local super output area code                  |ADDRESS_HIST_DIM.csv        |
+## Disability
+|Concept ID|Concept                                                            |Carrot Table              |OMOP Table          |Source Field                            |Description                                   |Source Table                |
+|----------|-------------------------------------------------------------------|--------------------------|--------------------|----------------------------------------|----------------------------------------------|----------------------------|
+|36659695  |Disability type                                                    |disability                |observation         |DISABILITY_DESCRIPTION                  |Disability description                        |DISBAILITY_FACT.csv         |
+|N/A       |N/A                                                                |disability_end            |observation         |DIS_END_DATE                            |Disability end date                           |DISBAILITY_FACT.csv         |
+|N/A       |N/A                                                                |disability                |observation         |DIS_START_DATE                          |Disability start date                         |DISBAILITY_FACT.csv         |
+|40757687  |Health conditions                                                  |disability                |observation         |HEALTH_CONDITION                        |Specific health condition diagnosis           |DISBAILITY_FACT.csv         |
+## Language Fact
+|Concept ID|Concept                                                            |Carrot Table              |OMOP Table          |Source Field                            |Description                                   |Source Table                |
+|----------|-------------------------------------------------------------------|--------------------------|--------------------|----------------------------------------|----------------------------------------------|----------------------------|
+|45877447  |Language                                                           |person_2                  |observation         |LANGUAGE_DESC                           |Language description                          |LANGUAGE_FACT.csv           |
+|3043205   |Language.primary                                                   |person_2                  |observation         |PRIMARY_LANGUAGE                        |Primary language.                             |LANGUAGE_FACT.csv           |
+## Person Fact
+|Concept ID|Concept                                                            |Carrot Table              |OMOP Table          |Source Field                            |Description                                   |Source Table                |
+|----------|-------------------------------------------------------------------|--------------------------|--------------------|----------------------------------------|----------------------------------------------|----------------------------|
+|N/A       |N/A                                                                |death                     |observation         |﻿DATE OF DEATH                           |Date of death                                 |PERSON_DIM.csv              |
+|N/A       |N/A                                                                |person                    |person              |DOB                                     |Date of birth                                 |PERSON_DIM.csv              |
+|N/A       |Map directly to response                                           |person                    |person              |ETHNICITY_DESCRIPTION                   |Ethnicity description                         |PERSON_DIM.csv              |
+|1585347   |The Basics: Gender                                                 |person                    |observation         |GENDER                                  |Gender                                        |PERSON_DIM.csv              |
+|4052648   |Disability                                                         |person_2                  |observation         |IS_DISABLED                             |Disability flag.                              |PERSON_DIM.csv              |
+|4155450   |Country of birth                                                   |person_2                  |observation         |NATIONALITY_DESCRIPTION                 |Nationality description                       |PERSON_DIM.csv              |
+|4052017   |Religious affiliation                                              |person_2                  |observation         |RELIGION_DESCRIPTION                    |Religion description                          |PERSON_DIM.csv              |
+## S47 Enquiry End
+|Concept ID|Concept                                                            |Carrot Table              |OMOP Table          |Source Field                            |Description                                   |Source Table                |
+|----------|-------------------------------------------------------------------|--------------------------|--------------------|----------------------------------------|----------------------------------------------|----------------------------|
+|N/A       |N/A                                                                |s47_enquiry_end           |observation         |S47_ENQ_END_DATE                        |Enquiry end date                              |S47_ENQUIRY_FACT.csv        |
+|4237323   |Child protection case conference                                   |s47_enquiry               |observation         |S47_ENQ_OUTCOME_CP_CONFERENCE           |Outcome flag CP (protected child) conference  |S47_ENQUIRY_FACT.csv        |
+|4139252   |Legal proceedings                                                  |s47_enquiry               |observation         |S47_ENQ_OUTCOME_LEGAL_ACTION            |Outcome flag legal action                     |S47_ENQUIRY_FACT.csv        |
+|1620966   |No further follow-up                                               |s47_enquiry               |measurement         |S47_ENQ_OUTCOME_NFA                     |Outcome flag no further action                |S47_ENQUIRY_FACT.csv        |
+|4019826   |Respite care of patient                                            |s47_enquiry               |observation         |S47_ENQ_OUTCOME_PROV_OF_SHORT_BREAK_CARE|Outcome flag provision of short break care    |S47_ENQUIRY_FACT.csv        |
+|4148671   |Social services                                                    |s47_enquiry               |observation         |S47_ENQ_OUTCOME_PROV_OF_SVCS            |Outcome flag provision of services            |S47_ENQUIRY_FACT.csv        |
+|44795391  |Child protection investigation                                     |s47_enquiry               |procedure_occurrence|S47_ENQ_START_DATE                      |Enquiry start date                            |S47_ENQUIRY_FACT.csv        |
+## Category of Need
+|Concept ID|Concept                                                            |Carrot Table              |OMOP Table          |Source Field                            |Description                                   |Source Table                |
+|----------|-------------------------------------------------------------------|--------------------------|--------------------|----------------------------------------|----------------------------------------------|----------------------------|
+|N/A       |Map directly to response                                           |child_in_need             |observation         |﻿CATEGORY_OF_NEED                        |Category of need code                         |CATEGORY_OF_NEED_FACT.csv   |
+|4047220   |Child no longer in need                                            |need_end                  |observation         |NEED_END_DATE                           |Need status end date                          |CATEGORY_OF_NEED_FACT.csv   |
+|N/A       |N/A                                                                |child_in_need             |observation         |NEED_START_DATE                         |Need status start date                        |CATEGORY_OF_NEED_FACT.csv   |
